@@ -61,7 +61,7 @@ console.log(data)
 
     {isSuccess &&
     <Container>
-    <h1>Latest Produx</h1>
+    <h1>Latest Products</h1>
     <Row>
         {data.map(product=>(
             <Col key={product._id} sm={12} md={6} lg={3} xl={4}>
