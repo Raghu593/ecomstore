@@ -37,9 +37,6 @@ const Header = () => {
     // dispatch(api.util.resetApiState())
     navigate('/')
   }
-
-
-
   return (
     <header>
         <div style={{backgroundColor:'#000',display:'flex',justifyContent:'center'}}>
