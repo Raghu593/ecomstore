@@ -42,7 +42,7 @@ const Header = () => {
         <div style={{backgroundColor:'#000',display:'flex',justifyContent:'center'}}>
           <p style={{color:'#fff',marginTop:15, color:brandcolor,fontSize:13}}>Free shipping above Rs.999/-</p>
         </div>
-      <Navbar bg="#fcfaf8" variant='dark' expand="lg" collapseOnSelect style={{backgroundColor:'#fcfaf8'}}>
+      <Navbar bg="#fcfaf8" variant='light' expand="lg" collapseOnSelect style={{backgroundColor:'#fcfaf8'}}>
       <Container>
         <LinkContainer to='/'>
         <Navbar.Brand>
