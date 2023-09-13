@@ -1,9 +1,11 @@
 import React from 'react'
-import { Row , Col, Container } from 'react-bootstrap'
+import { Row , Col, Container ,Image} from 'react-bootstrap'
 import Product from '../components/Product'
 import { useGetAllProductsQuery } from '../app/api';
 import Loader from '../components/Loader';
 import ProductCarousel from '../components/Productcarousal';
+import baby from '../assets/baby2.jpg'
+
 
 const HomeScreen = () => {
 
@@ -47,9 +49,12 @@ console.log(data)
   return (
     
     <main className="py-3">
-      <Container>
-          <ProductCarousel/>
-          </Container>
+          <ProductCarousel/>    
+          {/* <Container>      
+          <Image src={baby} fluid style={{height:'100%',width:'100%'}}/>
+          <h1 style={{position: 'absolute', 
+          top: '20%',color:"white",fontWeight:"500",left:'8%',fontSize:25}}>Every Nutrition Your Baby Needs In One Sachet</h1>
+          </Container> */}
     { 
       isLoading && 
 
@@ -61,7 +66,7 @@ console.log(data)
 
     {isSuccess &&
     <Container>
-    <h1>Latest Products</h1>
+    <h1>Latest Products </h1>
     <Row>
         {data.map(product=>(
             <Col key={product._id} sm={12} md={6} lg={3} xl={4}>
@@ -74,5 +79,9 @@ console.log(data)
     </main>
   )
 }
+
+
+
+
 
 export default HomeScreen
