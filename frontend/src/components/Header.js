@@ -4,7 +4,7 @@ import { Container,Navbar,Nav,NavDropdown } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import {useDispatch} from 'react-redux';
 import { resetCart } from '../app/features/slices/cartslice';
-import logo from '../assets/rawrural.jpeg'
+import logo from '../assets/naturely.png'
 import { brandcolor } from './brandcolor';
 
 const Header = () => {
